@@ -1,0 +1,13 @@
+def firstDuplicate(a):
+    uniques = []
+    
+    for i in a:
+        
+        if i not in uniques:
+            uniques.append(i)
+            
+        elif i in uniques:
+            return i
+            break
+
+    return(-1)
